@@ -1,0 +1,9 @@
+<ion-view view-title="Dashboard">
+	<ion-content class="padding">
+		<h4>AWESOME</h4>
+		<button class="button button-block button-dark" ng-click="identifyUser()">Identify a user</button>
+		<button class="button button-block button-positive" ng-if="identified" ng-click="pushRegister()">Register for Push</button>
+		<button class="button button-primary button-block " ng-click="checkForUpdates()">Check for Update</button>
+		<button class="button button-stable button-block button-pulse" ng-if="hasUpdate" ng-click="doUpdate()">Update</button>
+	</ion-content>
+</ion-view>
